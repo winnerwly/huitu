@@ -1,8 +1,17 @@
 <template>
   <div class="hello">
-    <div class="container">
-      <div class="page-header">
-        <button class="btn btn-info">这是一个很简单的页面</button>
+    <div class="content">
+      <div class="header">慧途信息科技有限公司</div>
+      <div class="photo">
+        <img src="/static/img/slg.png" alt="">
+      </div>
+      <div class="nav">
+        <ul>
+          <li>关于我们</li>
+          <li>服务项目</li>
+          <li>新闻中文</li>
+          <li>联系我们</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -19,11 +28,25 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang='less' scoped>
 .hello {
-  div {
-    text-align: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url(/static/img/about.jpg);
+  .content {
+    .header {
+      font-size: 20px;
+      color: #f00;
+      text-align: center;
+    }
+    width: 800px;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -400px;
   }
 }
 </style>
