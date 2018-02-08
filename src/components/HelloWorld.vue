@@ -3,6 +3,7 @@
     <div class="content">
       <div class="header">慧途信息科技有限公司</div>
       <div class="photo">
+        <div class="left">知识影响未来</div>
         <img src="/static/img/slg.png" alt="">
       </div>
       <div class="nav">
@@ -29,7 +30,13 @@ export default {
 </script>
 
 <style lang='less' scoped>
+.left {
+  float: left;
+  color: #fff;
+  font-size: 40px;
+}
 .hello {
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
   position: relative;
